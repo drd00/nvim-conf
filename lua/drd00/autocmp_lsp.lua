@@ -43,7 +43,8 @@ if install_lsp then
         'json-lsp', -- JSON
         'html-lsp', -- HTML
         'eslint-lsp',    -- ESLint
-        'clangd'    -- C/C++
+        'clangd',    -- C/C++
+        'ltex-ls'   -- LaTeX
     }
 
     local function ensure_all_installed(install_list)
@@ -67,3 +68,4 @@ lspconfig.jsonls.setup {}
 lspconfig.html.setup {}
 lspconfig.eslint.setup {}
 lspconfig.clangd.setup {}
+lspconfig.ltex.setup {}
