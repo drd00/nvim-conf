@@ -1,3 +1,4 @@
+require("drd00.settings")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -42,5 +43,4 @@ vim.keymap.set('n', '<leader>fn', builtin.help_tags, {})
 
 -- theme
 vim.cmd("colorscheme kanagawa-wave")
-require("drd00.settings")
 require("drd00.autocmp_lsp")
